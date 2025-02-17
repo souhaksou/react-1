@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createHashRouter, Navigate } from "react-router-dom";
 import Index from "./pages/index";
 import Home from "./pages/home";
 import Mall from "./pages/mall";
@@ -48,6 +48,6 @@ const routes = [
   },
 ];
 
-const router = createBrowserRouter(routes);
+const router = createHashRouter(routes);
 
 export default router;

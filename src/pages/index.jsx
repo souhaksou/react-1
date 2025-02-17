@@ -2,7 +2,6 @@ import { Outlet } from "react-router-dom";
 import Sider from "../components/sider";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import ScrollToTop from "react-scroll-to-top";
 
 const Index = () => {
   return (
@@ -15,14 +14,6 @@ const Index = () => {
         </div>
         <Footer />
       </div>
-      <ScrollToTop
-        smooth
-        component={
-          <span>
-            <i className="bi bi-chevron-double-up"></i>
-          </span>
-        }
-      />
     </section>
   );
 };
