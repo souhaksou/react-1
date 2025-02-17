@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { selectTab, collapseMenu } from "../store/slice/tab";
+import photo from "../images/photo.jpg";
 
 const Header = () => {
   const isCollapse = useSelector(selectTab);
@@ -18,11 +19,7 @@ const Header = () => {
         </button>
       </div>
       <div>
-        <img
-          src={"../src/images/photo.jpg"}
-          alt="photo"
-          className="w:48 r:50%"
-        />
+        <img src={photo} alt="photo" className="w:48 r:50%" />
       </div>
     </header>
   );

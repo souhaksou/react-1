@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getData } from "../api";
 import Chart from "../charts/home";
+import photo from "../images/photo_home.jpg";
 
 const Home = () => {
   const [table, setTable] = useState([]);
@@ -19,7 +20,7 @@ const Home = () => {
         <div className="bg:white p:16 r:8 transition:200ms ~easing:ease-in {translate(-4,-4);shadow:2|2|#8F9FBC;}:hover">
           <div className="flex">
             <img
-              src="../src/images/photo_home.jpg"
+              src={photo}
               alt="photo"
               className="block aspect:1/1 r:50% max-w:150!"
             />
